@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('/departments', 'DepartmentsController@index')
+// ->name('departmentLists');
+//->middleware('test');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
